@@ -2,3 +2,5 @@ setuptools
 sphinx_rtd_theme
 requests
 kombu
+oslo.config
+oslo.log
