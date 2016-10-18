@@ -83,6 +83,8 @@ class EtcdStoreHandler(StoreHandlerBase):
             client_args['cert'] = (
                 config['certificate-path'],
                 config['certificate-key-path'])
+        if config.get('certificate-ca-path'):
+                client_args['ca_cert'] = config['certificate-ca-path']
         self._store = etcd.Client(**client_args)
         self._etcd_namespace = '/commissaire'
 
