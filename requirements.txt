@@ -2,4 +2,3 @@ setuptools
 sphinx_rtd_theme
 requests
 kombu
-git+git://github.com/jplana/python-etcd.git#egg=python-etcd
